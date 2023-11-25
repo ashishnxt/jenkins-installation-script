@@ -4,8 +4,8 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum upgrade
 # Add required dependencies for the jenkins package
-sudo yum install fontconfig java-17-openjdk
-sudo yum install jenkins
+sudo yum install fontconfig java-17-openjdk -y
+sudo yum install jenkins -y
 sudo systemctl daemon-reload
 # Start Services
 sudo systemctl enable jenkins
