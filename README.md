@@ -36,7 +36,7 @@ Configure Jekins for Port 8443
 ExecStart=/usr/bin/jenkins --httpsRedirectHttp
 Environment="JENKINS_HTTPS_PORT=8443"
 Environment="JENKINS_HTTPS_KEYSTORE=/var/lib/jenkins/jenkinsserver.jks"
-Environment="JENKINS_HTTPS_KEYSTORE_PASSWORD=baeldung"
+Environment="JENKINS_HTTPS_KEYSTORE_PASSWORD=<earlier password>"
 ```
 Restart Jenkins Server
 ```bash
