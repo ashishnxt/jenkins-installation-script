@@ -43,3 +43,19 @@ Restart Jenkins Server
 sudo systemctl daemon-reload
 sudo systemctl restart jenkins
 ```
+
+## Jenkins Appearance
+
+### Changing the Header
+Often organizations want to customize the appearance of Jenkins. For example, adding their company logo and name.
+For this purpose the following plugin can be used:
+
+https://plugins.jenkins.io/customizable-header/
+
+## Jenkins Node Architecture
+
+### Adding a Node
+To not stress out the Jenkins server, you would want to add an additional node that Jenkins can use to execute your CI/CD Pipelines.
+
+This is accomplished using an SSH Credential that Jenkins can use to connect to the node. 
+Also, it is important to note that the Jenkins Node needs to have Java installed on it.
