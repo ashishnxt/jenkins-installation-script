@@ -27,3 +27,7 @@ Step 4: Run the playbook against the inventory
 Step 5: Log any artifacts
 
 Step 6: Print a success message if the pipeline runs else print an error message
+
+## Sample Repository for Jenkins Ansible Pipeline
+
+https://github.com/networknuts/jenkins-ansible-project
