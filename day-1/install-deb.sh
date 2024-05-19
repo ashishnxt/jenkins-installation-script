@@ -1,4 +1,7 @@
 #!/bin/bash
+# gpg error
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5BA31D57EF5975CA
+echo "deb http://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list
 
 sudo apt update -y
 sudo apt install default-jre -y
